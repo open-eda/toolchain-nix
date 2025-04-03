@@ -71,7 +71,7 @@
             };
           };
 
-          fpga-assembler = (builtins.getFlake "github:lromor/fpga-assembler").${system}.packages.default;
+          fpga-assembler = (builtins.getFlake "github:lromor/fpga-assembler/6ff89a2d53edc9d74a402c28096450473b67de13").packages.${system}.default;
 
           # disable yosys-synlig for now: synlig is not very good and it does not compile with recent yosys
           # yosys-synlig = callPackage ./nix/yosys-synlig.nix { };
